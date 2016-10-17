@@ -21,9 +21,8 @@ app.get('/one', function(req,res){
    res.send("ONE"); 
 });
 
-app.get('/ui/one.html', function(req, res)
-{
-   res.sendFile(path.join(_dirname,'ui', 'one.html')); 
+app.get('/ui/one.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'one.html'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
