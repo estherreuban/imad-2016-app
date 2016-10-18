@@ -82,11 +82,11 @@ app.get('/one', function (req, res) {
   res.send(createTemplate(ONE));
 });
 
-app.get('/one', function (req, res) {
+app.get('/two', function (req, res) {
   res.send(createTemplate(TWO));
 });
 
-app.get('/one', function (req, res) {
+app.get('/three', function (req, res) {
   res.send(createTemplate(THREE));
 });
 /*
