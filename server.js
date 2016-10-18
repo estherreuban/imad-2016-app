@@ -81,7 +81,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get(':pageNam', function (req, res) {
     
-    var pageNam=req.params.PageNames;
+    var pageNam=req.params.pageNam;
   res.send(createTemplate(PageNames[pageNam]));
 });
 
