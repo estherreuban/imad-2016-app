@@ -35,6 +35,12 @@ content:`
 
 };
 
+PageNames={
+    'ONE':{ONE},
+    'TWO':{TWO},
+    'THREE':{THREE}
+};
+
 function createTemplate(data){
 var title=data.title;
 var header=data.header;
@@ -43,7 +49,7 @@ var htmlTemplate = `
 <html>
     <head>
         <title>
-        ${title};
+        ${title}
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -78,17 +84,17 @@ app.get('/ui/madi.png', function (req, res) {
 
 
 
-app.get('/one', function (req, res) {
-  res.send(createTemplate(ONE));
+app.get(':pageNam', function (req, res) {
+  res.send(createTemplate(PageNames[pageNam]));
 });
 
-app.get('/two', function (req, res) {
+/*app.get('/two', function (req, res) {
   res.send(createTemplate(TWO));
 });
 
 app.get('/three', function (req, res) {
   res.send(createTemplate(THREE));
-});
+});*/
 /*
 app.get('/two', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'two.html'));
