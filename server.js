@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 var Pages= {
-        ONE:{
+        'ONE':{
         title:'Page 1',
         header:'About ME',
         content:`
@@ -14,7 +14,7 @@ var Pages= {
         
         },
         
-        TWO:{
+        'TWO':{
         title:'Page 2',
         header:'About MY HUSBAND',
         content:`
@@ -25,7 +25,7 @@ var Pages= {
         },
         
         
-        THREE:{
+        'THREE':{
         title:'Page 3',
         header:'About MY CHILDREN',
         content:`
