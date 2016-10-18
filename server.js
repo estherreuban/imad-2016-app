@@ -36,7 +36,12 @@ content:`
 };
 
 PageNames={
-    'ONE':{ONE},
+    'ONE':{title:'Page 1',
+header:'About ME',
+content:`
+ <p>This is my first html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
+        <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
+`},
     'TWO':{TWO},
     'THREE':{THREE}
 };
