@@ -52,7 +52,7 @@ var htmlTemplate = `
             
             <h1>${title}</h1>
             <hr>
-            <h3>${Header}</h3>
+            <h3>${header}</h3>
             <div class="justifyText">
         ${content};
         </div>
