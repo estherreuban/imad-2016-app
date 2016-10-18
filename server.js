@@ -3,49 +3,39 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-
-var ONE={
-title:'Page 1',
-header:'About ME',
-content:`
- <p>This is my first html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
-        <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
-`
+var Pages= {
+        ONE:{
+        title:'Page 1',
+        header:'About ME',
+        content:`
+         <p>This is my first html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
+                <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
+        `
+        
+        },
+        
+        TWO:{
+        title:'Page 2',
+        header:'About MY HUSBAND',
+        content:`
+        <p>This is my SECOND html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
+                <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
+        `
+        
+        },
+        
+        
+        THREE:{
+        title:'Page 3',
+        header:'About MY CHILDREN',
+        content:`
+                  <p>This is my THIRD html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThisssssssssssssssssssssssssssssssssssssssssssssssssssss llllllllllllllllllllllllllllllll cccccccccccccccccccccccccccccs is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
+                    <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
+            `
+        
+        }
 
 };
-
-var TWO={
-title:'Page 2',
-header:'About MY HUSBAND',
-content:`
-<p>This is my SECOND html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
-        <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
-`
-
-};
-
-
-var THREE={
-title:'Page 3',
-header:'About MY CHILDREN',
-content:`
-          <p>This is my THIRD html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThisssssssssssssssssssssssssssssssssssssssssssssssssssss llllllllllllllllllllllllllllllll cccccccccccccccccccccccccccccs is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
-            <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
-    `
-
-};
-
-PageNames={
-    'ONE':{title:'Page 1',
-header:'About ME',
-content:`
- <p>This is my first html file One.html. This is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.htmlThis is my first html file One.html</p>
-        <p> djkfdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd hgidf iug ui gi  hgihiuhg. ru rgerig hiurh giurhg ierh giehgdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd  iehdjkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd djkf hkhgkjf ghkjfd hkfkf  fjk ghkjdfg. fuighdfi gifd ighigheuig hi giehgirh giregir gri g.</p>
-`},
-    'TWO':{TWO},
-    'THREE':{THREE}
-};
-
 function createTemplate(data){
 var title=data.title;
 var header=data.header;
