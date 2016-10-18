@@ -79,15 +79,15 @@ app.get('/ui/madi.png', function (req, res) {
 
 
 app.get('/one', function (req, res) {
-  res.send(createTemplate('ONE'));
+  res.send(createTemplate(ONE));
 });
 
 app.get('/one', function (req, res) {
-  res.send(createTemplate('TWO'));
+  res.send(createTemplate(TWO));
 });
 
 app.get('/one', function (req, res) {
-  res.send(createTemplate('THREE'));
+  res.send(createTemplate(THREE));
 });
 
 app.get('/two', function(req, res){
