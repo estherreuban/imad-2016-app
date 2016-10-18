@@ -82,7 +82,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/:pageNam', function (req, res) {
     
     var pageNam=req.params.pageNam;
-  res.send(createTemplate(PageNames[pageNam]));
+  res.send(createTemplate(Pages[pageNam]));
 });
 
 /*app.get('/two', function (req, res) {
