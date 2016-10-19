@@ -23,6 +23,6 @@ but.onclick = function(){
             }
         }
     };
-    req.open('GET', 'http://estherreuban.imad.hasura-app.io/Profile', true);
+    req.open('GET', 'http://estherreuban.imad.hasura-app.io/index.html', true);
     req.send(null);
 };
