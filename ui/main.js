@@ -6,13 +6,13 @@ element.innerHTML="fffffffff";);*/
 var img=document.getElementById('img1');
 var marginLeft=0;
 moveRight = function(){
-    marginLeft+=100;
+    marginLeft+=3;
     img.style.marginLeft=marginLeft +'px';
 };
 
 img.onclick = function (){
    
-   var interval= setInterval(moveRight, 100);
+   var interval= setInterval(moveRight, 10);
 
     
 };
