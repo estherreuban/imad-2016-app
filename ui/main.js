@@ -5,4 +5,5 @@ element.innerHTML="fffffffff";);*/
 
 var img=document.getElementById('img1');
 img.onclick = function (){
-img.style.marginLeft='100px';}
+    for(i=0;i<1000; i+=20)
+img.style.marginLeft=i+'x';}
