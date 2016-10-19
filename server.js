@@ -49,7 +49,7 @@ var htmlTemplate = `
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body align="center">
-        <div class="container">
+        <div id = "MainContent" class="container">
             
             <h1>${title}</h1>
             <hr>
