@@ -11,7 +11,7 @@
     height: 200px;
 }
 .img-small {
-    height: 20px;
+    height: 120px;
 }
 body{
     font-family: sans-serif;
@@ -21,7 +21,9 @@ body{
 .container{
             width:50%;
 /*            background-color:grey;*/
-
+            /*padding-left: 2%;
+            padding-right: 2%;*/
+          
             align-content: center;
             font-size: larger;
             margin: 0 auto;/* this aligns center*/
