@@ -4,4 +4,5 @@ var element=document.getElementById('MainContent');
 element.innerHTML="fffffffff";);*/
 
 var img=document.getElementById('img1');
-img.style.marginLeft='100px';
+img.onclick = function (){
+img.style.marginLeft='100px';}
