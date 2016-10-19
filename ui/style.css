@@ -1,15 +1,12 @@
 .center {
     text-align: center;
 }
-
 .text-big {
     font-size: 300%;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .img-medium {
     height: 200px;
 }
@@ -18,8 +15,7 @@ body{
     background-color: lightgrey;
     margin-top: 60px;
 }
- .container
-        {
+.container{
             padding-left: 2%;
             padding-right: 2%;
             background-color:grey;
@@ -28,9 +24,8 @@ body{
             font-size: larger;
             margin: 0 auto;/* this aligns center*/
             color: #4e239a;
-        }
-        .justifyText
-        {
+        }    
+.justifyText{
             text-align:justify;
         }
 
