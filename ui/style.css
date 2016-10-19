@@ -10,6 +10,9 @@
 .img-medium {
     height: 200px;
 }
+.img-small {
+    height: 20px;
+}
 body{
     font-family: sans-serif;
     background-color: lightgrey;
