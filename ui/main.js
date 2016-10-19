@@ -4,9 +4,15 @@ var element=document.getElementById('MainContent');
 element.innerHTML="fffffffff";);*/
 
 var img=document.getElementById('img1');
+
+moveRight = function(){
+    marginLeft+=100;
+    img.style.marginLeft=marginLeft +px;
+};
+
 img.onclick = function (){
    
-   var interval= setIntervel(marginLeft+=100,100);
-img.style.marginLeft=marginLeft;
+   var interval= setIntervel(moveRight, 100);
+
     
 };
