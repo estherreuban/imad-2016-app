@@ -19,8 +19,7 @@ body{
     margin-top: 60px;
 }
 .container{
-            padding-left: 2%;
-            padding-right: 2%;
+            width:65%;
 /*            background-color:grey;*/
 
             align-content: center;
