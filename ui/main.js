@@ -4,7 +4,7 @@ var element=document.getElementById('MainContent');
 element.innerHTML="fffffffff";);*/
 
 var img=document.getElementById('img1');
-
+var marginLeft=0;
 moveRight = function(){
     marginLeft+=100;
     img.style.marginLeft=marginLeft +px;
@@ -12,7 +12,7 @@ moveRight = function(){
 
 img.onclick = function (){
    
-   var interval= setIntervel(moveRight, 100);
+   var interval= setInterval(moveRight, 100);
 
     
 };
