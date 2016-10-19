@@ -5,5 +5,6 @@ element.innerHTML="fffffffff";);*/
 
 var img=document.getElementById('img1');
 img.onclick = function (){
-    for(i=0;i<1000; i+=20)
-img.style.marginLeft=i+'x';}
+   
+   var interval= setIntervel(marginLeft+=100,100)
+img.style.marginLeft=marginLeft;}
