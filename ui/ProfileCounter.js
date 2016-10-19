@@ -23,6 +23,6 @@ but.onclick = function(){
             }
         }
     };
-    req.open('GET', 'http://estherreuban.imad.hasura-app.io/index.html', true);
+    req.open('GET', 'http://estherreuban.imad.hasura-app.io/', true);
     req.send(null);
 };
