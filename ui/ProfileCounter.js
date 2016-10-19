@@ -16,7 +16,7 @@ but.onclick = function(){
     var req = new XMLHttpRequest();
     alert("1");
     req.onreadystatechange = function (){
-        if (req.readystate === XMLHttpRequest.DONE ){
+        if (req.readyState === XMLHttpRequest.DONE ){
             alert("2");
             if (req.status === 200){
                 alert("3");
