@@ -14,6 +14,7 @@ moveRight = function(){
     if (marginTop>500)
     marginTop=0;
     img.style.marginLeft=marginLeft +'px';
+    .style.marginTop=marginTop +'px';
 };
 
 img.onclick = function (){
