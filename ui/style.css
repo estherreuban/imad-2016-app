@@ -15,19 +15,18 @@
 }
 body{
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: white;
     margin-top: 60px;
 }
 .container{
             padding-left: 2%;
             padding-right: 2%;
-            background-color:grey;
+/*            background-color:grey;*/
 
             align-content: center;
             font-size: larger;
             margin: 0 auto;/* this aligns center*/
-            color: #4e239a;
-        }    
+            color:navy;        }    
 .justifyText{
             text-align:justify;
         }
