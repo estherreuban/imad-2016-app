@@ -7,8 +7,8 @@ var img=document.getElementById('img1');
 var marginLeft=0;
 var marginTop=0;
 moveRight = function(){
-    marginLeft+=3;
-    marginTop+=3;
+    marginLeft++;
+    marginTop++;
     if (marginLeft > 1000)
         marginLeft=0;
     if (marginTop>500)
