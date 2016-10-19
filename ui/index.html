@@ -1,20 +1,21 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-          
-    </head>
-  
-    <body>
-        <div style="left-align:100px">
-            <img id="img1" src="http://images.clipartbro.com/102/free-to-use-amp-amp-public-domain-raindrop-clip-art-102377.png" class="img-small"/>
-        </div>
-        <br>
-        <div id="MainContent"  class="center text-big bold">
-            Hi! I am Esther's webapp.
-<h4>This is done locally</h4>
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
-</html>
+console.log('LOADED');
+var element=document.getElementById('MainContent');
+/*console.log(element);
+element.innerHTML="fffffffff";);*/
+
+var img=document.getElementById('img1');
+var marginLeft=0;
+moveRight = function(){
+    marginLeft+=3;
+    
+    if (marginLeft > 1000)
+        marginLeft=0;
+    img.style.marginLeft=marginLeft +'px';
+};
+
+img.onclick = function (){
+   
+   var interval= setInterval(moveRight, 10);
+
+    
+};
