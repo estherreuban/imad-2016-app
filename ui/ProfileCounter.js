@@ -52,7 +52,9 @@ var req = new XMLHttpRequest();
             }
         }
     };
-    req.open('GET', 'http://estherreuban.imad.hasura-app.io/submitName', true);
+    var getName=document.getElementById('name');
+    var name=getName.value;
+    req.open('GET', 'http://estherreuban.imad.hasura-app.io/submitName?name='+name, true);
     req.send(null);
 
 
