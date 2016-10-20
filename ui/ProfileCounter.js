@@ -29,7 +29,21 @@ but.onclick = function(){
     req.send(null);
 };
 
+var submit=ducument.setElementById("sub_btn");
+submit.onclick = function(){
+var names=['Reuban','Esther','Prisci','Stephen'];
+var li="";
+for(i=0;i<names.length;i++){
+    li+='<ul>'+names[i]+'</ul>';
+    
+}
 
+var ul=document.getElementById('NameList');
+
+ul.innerHTML =li;
+
+
+}
 
 
 
