@@ -102,6 +102,14 @@ app.get('/:pageNam', function (req, res) {
   res.send(createTemplate(Pages[pageNam]));
 });
 
+var names=[];
+app.get('/submitName/:name', function(req, res){
+   var name = req.params.name;
+   names.push(name);
+   
+   res.send(JSON.stringify(names));
+});
+
 /*app.get('/two', function (req, res) {
   res.send(createTemplate(TWO));
 });
