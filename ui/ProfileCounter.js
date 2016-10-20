@@ -31,16 +31,30 @@ but.onclick = function(){
 
 var submit=document.getElementById("sub_btn");
 submit.onclick = function(){
-var names=['Reuban','Esther','Prisci','Stephen'];
-var li='';
-for(i=0;i<names.length;i++){
-    li+='<ul>'+names[i]+'</ul>';
+
+var req = new XMLHttpRequest();
     
-}
+    req.onreadystatechange = function (){
+        if (req.readyState === XMLHttpRequest.DONE ){
+    
+            if (req.status === 200){
+                var names=req.reponseText;
+                names=JSON.parse(names);
+                var li='';
+                for(i=0;i<names.length;i++){
+                    li+='<ul>'+names[i]+'</ul>';
+                    
+                }
+                
+                var ul=document.getElementById('NameList');
+                
+                ul.innerHTML =li;
+            }
+        }
+    };
+    req.open('GET', 'http://estherreuban.imad.hasura-app.io/submitName', true);
+    req.send(null);
 
-var ul=document.getElementById('NameList');
-
-ul.innerHTML =li;
 
 
 }
