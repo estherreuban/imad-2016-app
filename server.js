@@ -94,6 +94,13 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+var names=[];
+app.get('/submitName', function(req, res){
+   var name = req.query.name;
+   names.push(name);
+   
+   res.send(JSON.stringify(names));
+});
 
 
 app.get('/:pageNam', function (req, res) {
@@ -109,13 +116,6 @@ app.get('/submitName/:name', function(req, res){
    
    res.send(JSON.stringify(names));
 });*/
-var names=[];
-app.get('/submitName', function(req, res){
-   var name = req.query.name;
-   names.push(name);
-   
-   res.send(JSON.stringify(names));
-});
 
 
 
