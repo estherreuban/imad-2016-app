@@ -32,7 +32,7 @@ but.onclick = function(){
 var submit=ducument.setElementById("sub_btn");
 submit.onclick = function(){
 var names=['Reuban','Esther','Prisci','Stephen'];
-var li="";
+var li='';
 for(i=0;i<names.length;i++){
     li+='<ul>'+names[i]+'</ul>';
     
