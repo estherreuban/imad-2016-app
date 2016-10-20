@@ -29,7 +29,7 @@ but.onclick = function(){
     req.send(null);
 };
 
-var submit=document.setElementById("sub_btn");
+var submit=document.getElementById("sub_btn");
 submit.onclick = function(){
 var names=['Reuban','Esther','Prisci','Stephen'];
 var li='';
