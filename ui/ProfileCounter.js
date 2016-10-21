@@ -29,6 +29,8 @@ but.onclick = function(){
     req.send(null);
 };
 
+var getName=document.getElementById('name');
+var name1=getName.value;
 var submit=document.getElementById("sub_btn");
 submit.onclick = function(){
 
@@ -52,9 +54,8 @@ var req = new XMLHttpRequest();
             }
         }
     };
-    var getName=document.getElementById('name');
-    var name=getName.value;
-    req.open('GET', 'http://estherreuban.imad.hasura-app.io/submitName?name='+name, true);
+
+    req.open('GET', 'http://estherreuban.imad.hasura-app.io/submitName?name='+name1, true);
     req.send(null);
 
 
