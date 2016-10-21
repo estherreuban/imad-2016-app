@@ -38,8 +38,8 @@ var req = new XMLHttpRequest();
         if (req.readyState === XMLHttpRequest.DONE ){
     
             if (req.status === 200){
-                var names=req.reponseText;
-                names=JSON.parse(names);
+                var names1=req.reponseText;
+                names=JSON.parse(names1);
                 var li='';
                 for(i=0;i<names.length;i++){
                     li+='<ul>'+names[i]+'</ul>';
