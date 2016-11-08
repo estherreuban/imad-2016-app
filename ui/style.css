@@ -1,6 +1,7 @@
 .blog_container
 {
-    background: url('/ui/BG.png') ;
+    background: url('/ui/BG.png') repeat  ;
+     border: 2px solid black;
 }
 
 .center {
