@@ -2,6 +2,9 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+app.get('/blog.html', function(req, res){
+   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
+});
 var app = express();
 var Pages= {
         'one':{
@@ -142,7 +145,3 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-
-app.get(`/blog.html`, function(req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
-});
