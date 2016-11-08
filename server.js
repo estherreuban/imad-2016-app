@@ -7,6 +7,12 @@ var app = express();
 app.get('/blog', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
+
+app.get('/BG.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'BG.png'));
+});
+
+
 var Pages= {
         'one':{
         title:'Page 1',
