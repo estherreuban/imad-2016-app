@@ -8,7 +8,7 @@ app.get('/blog', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 
-app.get('/BG.png', function (req, res) {
+app.get('/ui/BG.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'BG.png'));
 });
 
