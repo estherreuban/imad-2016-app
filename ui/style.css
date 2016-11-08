@@ -1,10 +1,8 @@
 .blog_container
 {
-    background: url('/ui/BG.png')   ;
+    background: url('/ui/BG.png')  no-repeat ;
      margin: 0;
-     height:100%;
-     width:100%;
-     
+     background-size:100%;
      
 }
 
