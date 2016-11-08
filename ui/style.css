@@ -1,7 +1,10 @@
 .blog_container
 {
     background: url('/ui/BG.png') repeat  ;
-     border: 2px solid black;
+     margin: 0;
+     height:100%;
+     
+     
 }
 
 .center {
