@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-app.get('/blog.html', function(req, res){
+app.get('/blog', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 var app = express();
