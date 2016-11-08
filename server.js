@@ -6,6 +6,9 @@ var path = require('path');
 var app = express();
 
 
+app.get('/blog', function(req, res){
+   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
+});
 var Pages= {
         'one':{
         title:'Page 1',
